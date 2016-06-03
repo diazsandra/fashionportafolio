@@ -1,0 +1,407 @@
+
+
+/*NAV*/
+
+.navbar-default {
+  background-color: $bgDefault !important;
+  border-color: $bgHighlight !important;
+  	.navbar-brand {
+    color: $colDefault !important;
+   	 &:hover, &:focus {
+      color: $colHighlight !important; }}
+.navbar-text {
+    color: $colDefault !important; }
+.navbar-nav {
+    > li {
+      > a {
+        color: $colDefault !important;
+        &:hover,  &:focus {
+          color: $colHighlight !important; }}
+	      @if $dropDown {
+    	    > .dropdown-menu {
+        	  background-color: $bgDefault !important;
+          > li {
+            > a {
+              color: $colDefault !important;
+            	  &:hover,  &:focus {
+                	color: $colHighlight !important;
+                	background-color: $bgHighlight !important; }}
+            > .divider {
+              background-color: $bgHighlight !important;}}}}}
+    @if $dropDown {
+      .open .dropdown-menu > .active {
+        > a, > a:hover, > a:focus {
+          color: $colHighlight !important;
+          background-color: $bgHighlight !important; }}}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight;
+        background-color: $bgHighlight !important; }}
+    > .open {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight !important;
+        background-color: $bgHighlight !important; }}}
+.navbar-toggle {
+    border-color: $bgHighlight !important;
+    &:hover, &:focus {
+      background-color: $bgHighlight !important; }
+.icon-bar {
+      background-color: $colDefault !important; }}
+.navbar-collapse,
+.navbar-form {
+    border-color: $colDefault !important; }
+.navbar-link {
+    color: $colDefault !important;
+    &:hover {
+      color: $colHighlight !important; }}}
+
+@media (max-width: 767px) {
+  .navbar-default .navbar-nav .open .dropdown-menu {
+    > li > a {
+      color: $colDefault !important;
+      &:hover, &:focus {
+        color: $colHighlight !important; }}
+    > .active {
+      > a, > a:hover, > a:focus {
+        color: $colHighlight !important;
+        background-color: $bgHighlight !important; }}}
+}
+
+
+/*ACCESORIES*/
+
+#accesories{
+	padding: 5%;
+	.clock {
+	font-size: 4em;
+	margin-right: 0 !important;
+	padding-right: 0 !important;
+	}
+
+	.clock2 {
+	
+	h3 {
+		font-family: 'PT Sans Narrow', sans-serif !important;
+		}
+	}
+
+	.imgclock {
+		padding: 1% 0;
+	}
+
+	button {
+		border: none !important;
+		i {
+			color: $bgHighlight !important;
+		}
+	}
+
+	input {
+		border: 1px solid $bgHighlight !important;
+	}
+	.input-group-btn:last-child > .btn {
+    margin-left: -50px;
+    margin-top: 10px;
+	}
+	.buscador {
+		padding: 2% !important;
+
+		input {
+			width: 85%;
+		}
+	}
+}
+
+
+#contact {
+	background-color: #E0E0E0;
+	a {
+		color: inherit !important;
+	}
+
+	h4 {
+		float: left;
+		margin-top: 5px !important;
+		margin-right: 5%;
+		margin-top: 5% !important;
+		font-weight: bold;
+	}
+}
+
+
+	.ngro {
+		background-color: $ngro !important;
+		color: $blco !important;
+		i {
+			margin-right: 5px;
+		}
+		p {
+			font-size: 1.3em;
+		}
+	}
+
+	.blcorgba {
+		background-color: rgba (0, 0, 0, 0.5) !important;
+		color: $ngro;
+		li {
+			width: 300px !important;
+			padding: 2% !important;
+		}
+	}
+		
+.precio {
+	font-size: 1.3em !important;
+}
+
+	
+
+#arrival {
+	padding: 5%;
+}
+
+#sale {
+	padding: 5%;
+}
+
+
+.best {
+		font-size: 3.5em !important;
+		color: $muted;
+		a {
+			color: inherit !important;
+		}
+		h5{
+			float: left;
+			margin-top: 5%;
+			margin-right: 3%;
+			font-weight: bold;	
+			font-size: 16px;
+		}
+	}
+
+.grisobs {
+	color: $gris2 !important;
+	font-weight: bold;	
+	font-size: 16px;
+}
+
+.best2 {
+	padding: 3%  !important;
+}
+
+
+.doubleline {
+		border: 2px $muted solid;
+		border-left: none;
+		border-right: none;
+		height: 2px;
+		width: 100%;
+		margin-top: 10% !important;
+}
+
+#gal {
+	margin-top: 2%;
+	margin-bottom: 5%;
+}
+
+.galerias {
+	@include gale
+}
+
+.newsale {
+    @include news (#ef717f, 12%);
+}
+
+.salenew {
+	@include news (#17202A, 3%);
+}
+
+
+#clients {
+	background-image: url(../images/client-bg.jpg);
+	background-size: cover;
+	height: 300px; 
+	padding: 8% 0;	
+	margin: 5% 0;
+}
+
+.borde1 {
+	@include border 
+}
+
+.newsale1 {
+	@include news (#ef717f, 20%);
+}
+
+.blogline {
+	text-align: center;
+	padding: 10%;
+	padding-left: 25% !important;
+}
+
+#orders {
+	margin-top: 5%;
+	margin-bottom: 5%;
+}
+
+.order {
+	@include border 
+}
+
+.btnorder {
+	border-right: 1px solid $muted;
+	padding: 1% 7% !important;
+	height: 100%;
+
+	i {
+		color: $muted;
+		font-size: 2em;
+	}
+}
+
+.bbbb{
+	h4 {
+		margin: 0 !important;
+		padding: 0 !important;
+	}
+	p {
+		margin: 0 !important;
+		padding: 0 !important;	
+	}	
+}
+
+#footer1 {
+	background-color: $gris;
+	padding-top: 1%;
+	padding-bottom: 2%;
+}
+
+.icon {
+	width: 40px;
+	height: 40px;
+	background-color: $blco;
+	color: $muted;
+	font-size: 1.2em;
+	text-align: center;
+	i {
+		margin-top: 35%;
+	}
+}
+
+.list {
+	color: inherit !important;
+	margin: 10% 0 !important;
+	
+}
+
+.img-circle {
+	background-color: $blco !important;
+	width: 30px;
+	height: 30px;
+	text-align: center;
+	padding: 25%;
+}
+
+footer {
+	background-color: $gris2;
+	color: $blco;
+	padding: 1%;
+	.flright {
+		float: right;
+	}
+}
+
+.pink {
+		color: #ef717f;
+	}
+
+
+
+.carousel-indicators1 {
+  position: absolute;
+  bottom: 150px;
+  left: 50%;
+  z-index: 15;
+  width: 60%;
+  margin-left: -30%;
+  padding-left: 0;
+  text-align: center;
+  color: $blco;
+  	div {
+  		border: 2px solid $blco;
+  	}
+
+}
+
+
+
+
+.tachado {
+	text-decoration: line-through;
+}
+
+.mgrt {
+	margin-right: 45%;
+}
+
+.mgrl10 {
+	margin-left: 3%;
+}
+
+.pdt5 {
+	padding-bottom: 25% !important;
+}
+
+.mgrt5 {
+	margin-top: 3%;
+}
+
+.mgrt10 {
+	margin-top: 15% !important;
+}
+
+.font2 {
+	font-size: 1.5em;
+}
+
+.pdt20 {
+	padding: 6%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width: 300px) and (max-width: 750px){
+	.blcorgba {
+		background-color: rgba (0, 0, 0, 0.5) !important;
+		color: $ngro;
+		li {
+			width: 100% !important;
+			padding: 2% !important;
+			img {
+				width: 100%;
+			}
+		}
+	}
+
+	.clients {
+	margin-top: 5%;
+	margin-bottom: 5%;
+	}
+
+	
+}
+
+
+
+	

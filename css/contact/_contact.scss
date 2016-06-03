@@ -1,0 +1,54 @@
+
+#contactus {
+	background-image: url(../images/slider2.jpg);
+	background-size: cover;
+	height: 450px; 
+
+	.bgrblack {
+		background-color: rgba(0, 0, 0, 0.6);
+		height: 450px; 
+	}
+
+	.pink2 {
+		background-color: #ef717f;
+		color: white;
+		margin-top: 30%;
+		width: 100%;
+		
+		h1 {
+	font-size: 4em;
+	font-weight: bold;
+	}
+	}
+}
+
+.contactinfo {
+	color: $blco;
+	padding: 12% 10%  !important;		
+}
+
+#map {
+	margin: 5% 0 !important;
+}
+
+.form-control1 {
+	background-color: $gris !important;
+	border: none !important;
+}
+
+.btn-submit1 {
+	float: right !important;
+	background-color: $muted !important;
+	color: $blco !important;
+	font-weight: bold !important;
+}
+
+
+
+@media (min-width: 300px) and (max-width: 750px) {
+	h1 {
+		font-size: .4em;
+	}
+}
+
+
